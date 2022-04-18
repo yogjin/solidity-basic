@@ -16,7 +16,9 @@ contract Father {
 }
 
 contract Son is Father {
-  constructor() Father("jin"){}
+  // 상속할 Contract에 constcutor가 있는 경우 
+  // contract Son is Father("jin") 
+  constructor() Father("jin") {}
 
   // 아들이 일해서 번 돈
   uint256 public earning = 0;
